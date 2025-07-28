@@ -2,91 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Bhoodan Pochampally Sarees & Materials</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-100 text-gray-800">
 
-  <!-- Header -->
-  <header class="bg-indigo-700 text-white py-6 shadow-md">
-    <div class="container mx-auto px-4 flex justify-between items-center">
-      <h1 class="text-3xl font-bold">Bhoodan Pochampally Sarees</h1>
-      <nav>
-        <a href="#ikkat" class="mx-2 hover:underline">Ikkat Sarees</a>
-        <a href="#sico" class="mx-2 hover:underline">Sico Sarees</a>
-        <a href="#cotton" class="mx-2 hover:underline">Cotton Sarees</a>
-        <a href="#materials" class="mx-2 hover:underline">Cloth Materials</a>
-      </nav>
+  <!-- Navbar -->
+  <nav class="bg-blue-200 shadow-md p-3">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">MyPortfolio</h1>
+      <div class="space-x-4">
+        <a href="#about" class="hover:text-blue-500">About</a>
+        <a href="#projects" class="hover:text-blue-500">Projects</a>
+        <a href="#certificates" class="hover:text-blue-500">Certificates</a>
+      </div>
     </div>
-  </header>
+  </nav>
 
-  <!-- Main Content -->
-  <main class="container mx-auto px-4 py-10">
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-black-50">
+    <h2 class="text-4xl font-bold mb-9">Hello, I'm chikka Raghu Ram</h2>
+    <p class="text-xl text-gray-700">Web Developer & Designer</p>
+  </section>
 
-    <!-- Ikkat Sarees Section -->
-    <section id="ikkat" class="mb-12">
-      <h2 class="text-2xl font-semibold text-indigo-700 mb-4">Pochampally Ikkat Sarees</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <!-- Repeat this card for each saree -->
-        <div class="bg-white shadow rounded p-4">
-          <img class="w-full h-48 object-cover rounded" src="ikkat-saree-1.jpg" alt="Ikkat Saree 1">
-          <h3 class="mt-2 font-medium">Ikkat Saree - Classic Red</h3>
-          <p class="text-sm text-gray-600 mb-2">Handwoven traditional ikkat saree with geometric patterns.</p>
-          <span class="block text-indigo-700 font-bold">₹3,500</span>
-          <button class="mt-2 bg-indigo-600 text-white px-4 py-1 rounded hover:bg-indigo-800">Buy Now</button>
-        </div>
-        <!-- Add more saree cards as needed -->
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 md:px-20 bg-white">
+    <h3 class="text-3xl font-bold mb-6">About Me</h3>
+    <p class="text-lg text-gray-600">
+      I'm a passionate web developer with experience in creating responsive and user-friendly websites using HTML, CSS, JavaScript, and Tailwind CSS. I enjoy solving problems and building beautiful user experiences.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-6 md:px-20 bg-gray-100">
+    <h3 class="text-3xl font-bold mb-10">Projects</h3>
+    <div class="grid md:grid-cols-2 gap-8">
+      <!-- Project 1 -->
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="text-xl font-semibold mb-2">Project One</h4>
+        <p class="text-gray-600">A simple landing page built with Tailwind CSS.</p>
       </div>
-    </section>
-
-    <!-- Sico Sarees Section -->
-    <section id="sico" class="mb-12">
-      <h2 class="text-2xl font-semibold text-green-700 mb-4">Sico Sarees</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="bg-white shadow rounded p-4">
-          <img class="w-full h-48 object-cover rounded" src="sico-saree-1.jpg" alt="Sico Saree 1">
-          <h3 class="mt-2 font-medium">Sico Saree - Blue Gold</h3>
-          <p class="text-sm text-gray-600 mb-2">Silk-cotton blend sico saree with elegant borders.</p>
-          <span class="block text-green-700 font-bold">₹2,700</span>
-          <button class="mt-2 bg-green-600 text-white px-4 py-1 rounded hover:bg-green-800">Buy Now</button>
-        </div>
+      <!-- Project 2 -->
+      <div class="bg-white p-6 rounded-lg shadow">
+        <h4 class="text-xl font-semibold mb-2">Project Two</h4>
+        <p class="text-gray-600">A to-do app using JavaScript and local storage.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Cotton Sarees Section -->
-    <section id="cotton" class="mb-12">
-      <h2 class="text-2xl font-semibold text-yellow-700 mb-4">Cotton Sarees</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="bg-white shadow rounded p-4">
-          <img class="w-full h-48 object-cover rounded" src="/WhatsApp Image 2025-07-28 at 16.36.06_b3800216.jpg" alt="Cotton Saree 1">
-          <h3 class="mt-2 font-medium">Cotton Saree - Summer Breeze</h3>
-          <p class="text-sm text-gray-600 mb-2">Lightweight cotton saree perfect for daily wear.</p>
-          <span class="block text-yellow-700 font-bold">₹1,200</span>
-          <button class="mt-2 bg-yellow-600 text-white px-4 py-1 rounded hover:bg-yellow-800">Buy Now</button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Cloth Materials Section -->
-    <section id="materials" class="mb-12">
-      <h2 class="text-2xl font-semibold text-pink-700 mb-4">Cloth Materials</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
-        <div class="bg-white shadow rounded p-4">
-          <img class="w-full h-48 object-cover rounded" src="/WhatsApp Image 2025-07-28 at 16.36.07_a1468801.jpg" alt="Cloth Material 1">
-          <h3 class="mt-2 font-medium">Cotton Dress Material</h3>
-          <p class="text-sm text-gray-600 mb-2">Soft fabric suitable for suits and kurtis.</p>
-          <span class="block text-pink-700 font-bold">₹900</span>
-          <button class="mt-2 bg-pink-600 text-white px-4 py-1 rounded hover:bg-pink-800">Buy Now</button>
-        </div>
-      </div>
-    </section>
-
-  </main>
+  <!-- Certificates Section -->
+  <section id="certificates" class="py-16 px-6 md:px-20 bg-white">
+    <h3 class="text-3xl font-bold mb-6">Certificates</h3>
+    <ul class="space-y-4 text-lg text-gray-600 list-disc list-inside">
+      <li>Full Stack Web Development - Coursera</li>
+      <li>Responsive Web Design - freeCodeCamp</li>
+      <li>JavaScript Algorithms and Data Structures - freeCodeCamp</li>
+      <li>Python for Everybody - University of Michigan</li>
+    </ul>
+  </section>
 
   <!-- Footer -->
-  <footer class="bg-indigo-700 text-white text-center py-4">
-    &copy; 2025 Bhoodan Pochampally Sarees. All rights reserved.
+  <footer class="bg-gray-800 text-white text-center py-4">
+    &copy; 2025 Raghu Ram. All rights reserved.
   </footer>
 
 </body>
